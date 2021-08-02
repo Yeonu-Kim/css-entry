@@ -1,0 +1,63 @@
+<!-- 현재 방문중인 곳은 빨강, 기본 색은 검정, 방문한 적이 있는 곳은 회색 -->
+<!--saw tag인 문장을 지정할 때는 .을 앞에 찍어줌.-->
+<!--제일 최근의 코드가 우선순위이므로 id 선택자를 사용하여 코딩하는 것이 바람직-->
+<!--tag<class<id 순으로 영향력이 강함. 포괄적인 것보다 개별적인 것이 더 강함.-->
+<!--id는 반드시 한번만 등장해야 함. 기타 내용은 css selectors 검색으로 확인하기.-->
+
+<!doctype html>
+<html>
+<head>
+<title>What is WEB?</title>
+<meta charset="utf-8">
+<style>
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:3em;
+    text-align: center;
+  }
+  #active{
+    color:red;
+  }
+  .saw {
+    color:gray;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <h1>What is WEB?</h1>
+<ol>
+ <li><a href="7. Complete.html" class="saw">html</a></li>
+ <li><a href="7-1. document construction.html">javascript</a></li>
+ <li><a href="7-2. Complete.html" class="saw" id="active">css</a></li>
+</ol>
+
+<ul>
+  <li>Yeonu Kim</li>
+  <li>Junghwa Kim</li>
+  <li>Yonghee Kin</li>
+  <li>Inu Kim</li>
+</ul>
+<br>
+<h3>HTML</h3>
+
+<p>
+<br><a href="https://www.w3.org/TR/html5/" target=_self title="Definition of Html">html</a>은 <strong><u>웹문서</u>를 만들기 위하여</strong> 사용하는
+<br>기본적인 웹 언어의 한 종류이다.
+</p>
+<p style="margin-top:45px;">
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png"
+width="30%">
+<p style="margin-top:45px;">
+<p>
+웹 서버에 html 문서를 저장하고 있다가
+<br>클라이언트가 특정 html 페이지를 요청하면
+<br>해당 html 문서를 클라이언트로 전송한다.
+</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--div,span 는 아무 의미 없는 태그. 단순히 단어들을 묶에 줄 때 사용함.-->
+<!--div는 블럭 태그, span은 인라인 태그-->
+<!--fr은 그리드에서 비율을 나타내는 말. 고정된 크기는 px을 사용하고, 비율이 정해지지 않았다면 fr 사용.-->
+<!--caniuse 사이트에서 어떤 운영체제가 css 태그를 지원하는지 확인할 수 있음.-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>navigation article
+   </title>
+   <style>
+     div {
+       border:5px solid gray;
+     }
+     #grid{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;
+     }
+    </style>
+ </head>
+
+ <body>
+   <div id="grid">
+   <div>NAVIGATION</div> <div>ARTICLE</div>
+   </div>
+  </body>
+</html>
